@@ -193,7 +193,7 @@ class Rijndael(object):
     # Round constants.
     cls.rcon = [1]
     r = 1
-    for t in xrange(1, 30):
+    for t in range(1, 255):
       r = mul(2, r)
       cls.rcon.append(r)
 
